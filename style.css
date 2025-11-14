@@ -1,0 +1,229 @@
+/* ======================================================
+   PRASHANT PORTFOLIO — GALACTIC PURPLE INDIGO THEME
+   ====================================================== */
+
+:root{
+  --bg-dark: #0d0b20;
+  --bg-card: #171430;
+  --bg-hover: #1f1c3f;
+
+  --violet: #6d28d9;
+  --indigo: #4c1d95;
+  --pink: #d946ef;
+
+  --text-light: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --gradient: linear-gradient(135deg, #4c1d95, #6d28d9, #d946ef);
+
+  --radius: 16px;
+  --max-width: 1000px;
+}
+
+/* ======================== GLOBAL ======================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background: var(--bg-dark);
+  color: var(--text-light);
+  line-height:1.6;
+}
+
+a{ 
+  color: var(--pink);
+  text-decoration:none;
+}
+
+.container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 28px;
+}
+
+/* ======================== HEADER ======================= */
+
+.header{
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 18px 22px;
+  border-radius: var(--radius);
+  display:flex;
+  align-items:center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.logo{
+  width:60px;
+  height:60px;
+  border-radius: var(--radius);
+  background: var(--gradient);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:24px;
+  font-weight:700;
+  box-shadow:0 0 20px rgba(109,40,217,0.5);
+}
+
+.secondary-btn{
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--text-light);
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.secondary-btn:hover{
+  background: var(--bg-hover);
+  border-color: var(--pink);
+  color: var(--pink);
+  box-shadow: 0 0 12px rgba(217,70,239,0.4);
+}
+
+.nav{
+  margin-left:auto;
+  display:flex;
+  gap:16px;
+}
+
+.nav a{
+  padding:8px 12px;
+  border-radius:10px;
+  color:var(--text-light);
+  font-weight:600;
+  transition:0.2s ease-in-out;
+}
+
+.nav a:hover{
+  background: var(--bg-hover);
+}
+
+/* ======================== HERO ======================= */
+
+.hero{
+  display:flex;
+  gap:28px;
+  padding:30px 0;
+  align-items:center;
+}
+
+.profile-img{
+  width:150px;
+  height:150px;
+  border-radius: var(--radius);
+  overflow:hidden;
+  background: var(--bg-card);
+  box-shadow: 0 0 25px rgba(109,40,217,0.3);
+}
+
+.hero-text h1{
+  font-size:38px;
+  font-weight:700;
+  background: linear-gradient(135deg, #a855f7, #d946ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(217,70,239,0.4);
+}
+
+.hero-text p{
+  color: var(--text-muted);
+}
+
+/* ======================== CARDS ======================= */
+
+.card{
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding:20px;
+  margin-top:20px;
+  border:1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* ======================== BUTTONS ======================= */
+
+.cta{
+  background: var(--gradient);
+  padding:10px 18px;
+  border:none;
+  border-radius: var(--radius);
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.25s ease;
+}
+
+.cta:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px rgba(217,70,239,0.6);
+}
+
+/* ======================== SKILLS ======================= */
+
+.skill-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.skill{
+  background: var(--bg-hover);
+  padding:8px 12px;
+  border-radius:30px;
+  font-weight:600;
+  color:var(--text-light);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+/* ======================== PROJECTS ======================= */
+
+.project{
+  margin-bottom:18px;
+}
+
+.project strong{
+  color:#fff;
+}
+
+.project .meta{
+  color: var(--text-muted);
+  font-size:14px;
+}
+
+/* ======================== FOOTER ======================= */
+
+.footer{
+  margin-top:30px;
+  text-align:center;
+  color: var(--text-muted);
+  padding:10px 0;
+  font-size:14px;
+}
+
+/* ======================== RESPONSIVE ======================= */
+
+@media(max-width:850px){
+  .hero{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .profile-img{
+    width:120px;
+    height:120px;
+  }
+
+  .nav{
+    display:none;
+  }
+}
