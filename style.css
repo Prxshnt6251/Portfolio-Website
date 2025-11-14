@@ -1,6 +1,3 @@
-/* ======================================================
-   PRASHANT PORTFOLIO — GALACTIC PURPLE INDIGO THEME
-   ====================================================== */
 
 :root{
   --bg-dark: #0d0b20;
@@ -20,7 +17,7 @@
   --max-width: 1000px;
 }
 
-/* ======================== GLOBAL ======================= */
+
 
 *{
   margin:0;
@@ -46,7 +43,7 @@ a{
   padding: 28px;
 }
 
-/* ======================== HEADER ======================= */
+
 
 .header{
   background: rgba(255,255,255,0.05);
@@ -57,6 +54,16 @@ a{
   align-items:center;
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.site-title{
+  color: var(--text-light);
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 12px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo{
@@ -139,7 +146,6 @@ a{
   color: var(--text-muted);
 }
 
-/* ======================== CARDS ======================= */
 
 .card{
   background: var(--bg-card);
@@ -150,7 +156,7 @@ a{
   box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 }
 
-/* ======================== BUTTONS ======================= */
+
 
 .cta{
   background: var(--gradient);
@@ -168,7 +174,7 @@ a{
   box-shadow:0 0 20px rgba(217,70,239,0.6);
 }
 
-/* ======================== SKILLS ======================= */
+
 
 .skill-list{
   display:flex;
@@ -185,7 +191,7 @@ a{
   border:1px solid rgba(255,255,255,0.1);
 }
 
-/* ======================== PROJECTS ======================= */
+
 
 .project{
   margin-bottom:18px;
@@ -200,7 +206,7 @@ a{
   font-size:14px;
 }
 
-/* ======================== FOOTER ======================= */
+
 
 .footer{
   margin-top:30px;
@@ -210,7 +216,7 @@ a{
   font-size:14px;
 }
 
-/* ======================== RESPONSIVE ======================= */
+
 
 @media(max-width:850px){
   .hero{
